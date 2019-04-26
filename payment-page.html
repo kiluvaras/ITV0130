@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+
+</head>
+<body>
+<div id="header-container-2" class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-sm-2">
+            <a href="index.html">
+                <img id="logo" src="cinema.png" class="img-fluid" alt="Logo link to go home" style="max-height: 125px">
+            </a>
+            <br>
+            <div id="choose-cinema-2" class="container mt-2">
+                <select>
+                    <option selected disabled hidden>Vali kino</option>
+                    <option>Tallinn</option>
+                    <option>Tartu</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-1 justify-content-end d-none d-md-block">
+            <select id="select-lang" class="float-right">
+                <option disabled hidden>EST</option>
+                <option>EST</option>
+                <option>ENG</option>
+                <option>RU</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <a class="btn-default">
+                <i class="fas fa-user-circle fa-5x"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="nav-bar-container" class="container-fluid mt-3">
+    <div class="row">
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>KINOKAVA</h2></div>
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>HETKEL KINOS</h2></div>
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>VARSTI TULEMAS</h2></div>
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>KAMPAANIAD</h2></div>
+    </div>
+</div>
+
+<div id="progress-bar-container" class="container mt-5 mb-5">
+    <div class="row justify-content-md-center">
+        <div class="btn-group p-2" role="group" aria-label="Basic example" style="width: 100%">
+            <button type="button" class="btn btn-secondary p-3 border-dark col-3" style="font-size: 30px">VALI FILM
+            </button>
+            <button type="button" class="btn btn-secondary p-3 border-dark col-3" style="font-size: 30px">VALI KOHT
+            </button>
+            <button type="button" class="btn btn-success p-3 border-dark col-3" style="font-size: 30px">MAKSA</button>
+            <button type="button" class="btn btn-secondary p-3 border-dark col-3" style="font-size: 30px">VALMIS
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="payment-container" class="container">
+    <table id="cart" class="table table-hover table-condensed">
+        <thead>
+        <tr>
+            <th style="width:50%">Product</th>
+            <th style="width:10%">Price</th>
+            <th style="width:8%">Quantity</th>
+            <th style="width:22%" class="text-center">Subtotal</th>
+            <th style="width:10%"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-th="Product">
+                <div class="row">
+                    <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..."
+                                                         class="img-responsive"/></div>
+                    <div class="col-sm-10">
+                        <h4 class="nomargin">Klassikokkutulek 3: Ristiisad</h4>
+                        <p>Rida: 8 Istekoht: 10</p>
+                    </div>
+                </div>
+            </td>
+            <td data-th="Price">$1.99</td>
+            <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1" min="0">
+            </td>
+            <td data-th="Subtotal" class="text-center">1.99</td>
+            <td class="actions" data-th="">
+                <button type="button" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span> Remove
+                </button>
+            </td>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="visible-xs">
+            <td class="text-center"><strong>Total 1.99</strong></td>
+        </tr>
+        <tr>
+            <td><a href="choose-seats.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Back to choosing
+                seats</a></td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td></td>
+            <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <div id="payment-details-container" class="row">
+        <label for="exampleInputEmail1"><h2>Email address</h2></label>
+        <input type="email" class="form-control m-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+               placeholder="Enter email">
+        <label><h2>Choose payment type</h2></label>
+    </div>
+    <div id="payment-method-form" class="row">
+        <div class="panel panel-default credit-card-box">
+            <div class="panel-heading display-table">
+                <div class="row display-tr">
+                    <h3 class="panel-title display-td">Payment Details</h3>
+                    <div class="display-td">
+                        <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <form role="form" id="payment-form">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label for="cardNumber">CARD NUMBER</label>
+                                <div class="input-group">
+                                    <input
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="Valid Card Number"
+                                            autocomplete="cc-number"
+                                            required
+                                    />
+                                    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span
+                                        class="visible-xs-inline">EXP</span> DATE</label>
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        name="cardExpiry"
+                                        placeholder="MM / YY"
+                                        autocomplete="cc-exp"
+                                        required
+                                />
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cardCVC">CV CODE</label>
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        name="cardCVC"
+                                        placeholder="CVC"
+                                        autocomplete="cc-csc"
+                                        required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label for="couponCode">COUPON CODE</label>
+                                <input type="text" class="form-control" name="couponCode"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="after-payment.html">
+                                <button class="btn btn-success btn-lg btn-block" type="submit">Pay</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="display:none;">
+                        <div class="col-xs-12">
+                            <p class="payment-errors"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="row mt-5">
+        <div class="col-4 text-center p-2" style="background-color: lightgrey"><h4>FAQ</h4></div>
+        <div class="col-4 text-center p-2" style="background-color: lightgrey"><h4>SOCIAL</h4></div>
+        <div class="col-4 text-center p-2" style="background-color: lightgrey"><h4>CONTACT</h4></div>
+    </div>
+</footer>
+
+</body>
+</html>

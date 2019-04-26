@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body>
+<div id="header-container-2" class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-sm-2">
+            <a href="index.html">
+                <img id="logo" src="cinema.png" class="img-fluid" alt="Logo link to go home" style="max-height: 125px">
+            </a>
+            <br>
+            <div id="choose-cinema-2" class="container mt-2">
+                <select>
+                    <option selected disabled hidden>Vali kino</option>
+                    <option>Tallinn</option>
+                    <option>Tartu</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-1 justify-content-end d-none d-md-block">
+            <select id="select-lang" class="float-right">
+                <option disabled hidden>EST</option>
+                <option>EST</option>
+                <option>ENG</option>
+                <option>RU</option>
+            </select>
+        </div>
+        <div class="col-sm-1">
+            <a class="btn-default">
+                <i class="fas fa-user-circle fa-5x"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="nav-bar-container" class="container-fluid mt-3">
+    <div class="row">
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>KINOKAVA</h2></div>
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>HETKEL KINOS</h2></div>
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>VARSTI TULEMAS</h2></div>
+        <div class="col text-center p-2" style="background-color: lightgrey"><h2>KAMPAANIAD</h2></div>
+    </div>
+</div>
+
+<div id="progress-bar-container" class="container mt-5 mb-5">
+    <div class="row justify-content-md-center">
+        <div class="btn-group p-2" role="group" aria-label="Basic example" style="width: 100%">
+            <button type="button" class="btn btn-secondary p-3 border-dark col-3"><h2>VALI FILM</h2>
+            </button>
+            <button type="button" class="btn btn-success p-3 border-dark col-3"><h2>VALI KOHT</h2>
+            </button>
+            <button type="button" class="btn btn-secondary p-3 border-dark col-3"><h2>MAKSA</h2></button>
+            <button type="button" class="btn btn-secondary p-3 border-dark col-3"><h2>VALMIS</h2>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="choose-seats-tickets-container" class="container p-5">
+    <div class="row justify-content-center mt-2">
+        <div class="col-8" style="background-color: #6610f2; height: 400px">
+            <h1 class="text-center">SEAT SELECTION</h1>
+        </div>
+    </div>
+
+    <div id="choose-tickets-container" class="row justify-content-center mt-5">
+        <div class="col-8 p-0">
+            <table class="table table-hover bg-light">
+                <thead>
+                <tr>
+                    <th style="font-size: 30px" scope="col">Type</th>
+                    <th style="font-size: 30px" scope="col">Price</th>
+                    <th style="font-size: 30px" scope="col">Amount</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td style="font-size: 30px">Tavapilet</td>
+                    <td class="text-center">5.00</td>
+                    <td>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="minus"
+                                        data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 30px">Tudengipilet</td>
+                    <td class="text-center">6.50</td>
+                    <td>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="minus"
+                                        data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                    </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 30px">Pensionäri pilet</td>
+                    <td class="text-center">4.20</td>
+                    <td>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="minus"
+                                        data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="ticket-continue-button-container" class="container-fluid mt-3 p-0" style="width: 700px">
+        <div class="row justify-content-end">
+            <a href="payment-page.html">
+                <button class="btn btn-success text-center pl-5 pr-5" style="width: 100%; font-size: 40px">CONFIRM</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="row mt-5">
+        <div class="col-4 text-center p-2" style="background-color: lightgrey"><h2>FAQ</h2></div>
+        <div class="col-4 text-center p-2" style="background-color: lightgrey"><h2>SOCIAL</h2></div>
+        <div class="col-4 text-center p-2" style="background-color: lightgrey"><h2>CONTACT</h2></div>
+    </div>
+</footer>
+
+</body>
+</html>
